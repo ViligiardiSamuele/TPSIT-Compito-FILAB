@@ -1,18 +1,21 @@
-## Getting Started
+## VERIFICA THREAD FILA B
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
 
-## Folder Structure
+Un gruppo di 10 bevitori ha a disposizione una botte di vino con 3 rubinetti, contenente 100 litri di vino. 
 
-The workspace contains two folders by default, where:
+Di conseguenza possono bere solo tre persone alla volta, sempre che la botte contenga ancora vino. 
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+Si suppone per semplicità che ogni bevuta faccia diminuire il vino nella botte di una quantità variabile intera compresa fra 1 litro e 3 litri.
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+Simulare la suddetta situazione in Java, utilizzando un Monitor cioè uno o più  metodi Java con il costrutto synchronized. 
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+Il thread bevitore, mediante una iterazione, dopo aver atteso un tempo casuale, deciderà di bere: il thread rimane in attesa se il numero di rubinetti liberi è 0, altrimenti effettuerà la bevuta (se c’è ancora vino nella botte) in un tempo variabile tra i 2 e 3 secondi, quindi rilascerà il rubinetto.
+Qualora non ci sia più vino nella botte, i thread in attesa devono essere terminati.
 
-## Dependency Management
+Nel metodi del Monitor gestire i vincoli sulla mutua esclusione e sugli accessi limitati.
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+Inserire nei punti opportuni del programma delle stampe per mostrare all’utente l’evoluzione dello stato dei bevitori e della botte. 
+
+Salvare in piattaforma CLASSROOM la cartella zippata _<cognome_FILA_X>_ contenente l’intero progetto JAVA
+
+Una valutazione più alta sarà data a chi in piattaforma CLASSROOM consegnerà un link GIT-HUB al repository contenente l’intero progetto java
